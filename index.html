@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Currency Tracker</title>
+    <script src="https://kit.fontawesome.com/94c15d1aca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h3 class="title">Crypto Currency Tracker</h3>
+    </nav>
+
+    <div class="search-bar">
+        <div class="search-wrap">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="search" placeholder="Search cryptocurrencies..." />
+        </div>
+    </div>
+    
+    <div class="sort">
+            <select title ="select"id="sort-options">
+                <option value="">Sort By Price</option>
+                <option value="low-high">Price: Low → High</option>
+                <option value="high-low">Price: High → Low</option>
+            </select>
+    </div>
+
+
+    <!-- CRYPTOLIST TABLE -->
+    <div class="list-container">
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>Name</th>
+                        <th>Price (USD)</th>
+                        <th>24H Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="crypto-list">
+                    <!-- Dynamic rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

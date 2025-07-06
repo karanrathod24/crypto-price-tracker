@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #CCFFCC;
+}
+
+.navbar{
+    background-color: #000066;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.title{
+    color: 	#33ff00;
+    font-weight: 800;
+    font-size: 32px;
+    
+    /* text-align: center; */
+}
+
+.light-icon{
+color: yellow; 
+font-size: 20px;
+}
+
+.dark-light{
+    width: 32px;
+    height: 32px;
+    margin-right: 9.5em;
+    background-color: #0d1747;
+    border-radius: 5px;
+    border: none;  
+}
+
+.dark-light:hover{
+    cursor: pointer;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.search-bar input{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    padding: 10px 10px 10px 40px; /* left padding for icon */
+    border-radius: 5px;
+}   
+
+.search-icon {
+  position: relative;
+  top: 30px;
+  left: 12px;
+  color: #000;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border:#000066 2px solid;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
+select:focus{
+     outline: none;
+    border:#000066 2px solid;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.2);
+}
+
+#sort-options option{
+    border-radius: 5px;
+    border: none;
+}
+
+
+/* TABLE  */
+
+.list-container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sort{
+    display: flex;
+    justify-content:end;
+    margin-right: 13em;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sort select{
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #80604c;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+}
+
+th, td{
+  padding: 12px;
+  text-align:center;
+  border-bottom: 1px solid #80604c;
+}
+
+
+thead {
+  background-color: #fff;
+}
+
+tr{
+    transition: transform 0.5s ease;
+    border-radius: 5px;
+}
+
+tr:nth-child(odd){
+    background-color: #f0f0f0;
+}
+
+tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover{
+    color: #f0f0f0;
+    background-color: #000066;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.02);
+}
